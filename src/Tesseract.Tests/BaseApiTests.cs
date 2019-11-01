@@ -9,10 +9,10 @@ namespace Tesseract.Tests
     {
         [Test,
          Ignore("GetVersion doesn't work for x64, probably compilation related.")]
-        public void GetVersion_Is410()
+        public void GetVersion_Is500()
         {
             var version = Interop.TessApi.Native.GetVersion();
-            Assert.That(version, Does.StartWith("4.1.0"));
+            Assert.That(version, Does.StartWith("5.0.0"));
         }
     }
 }
